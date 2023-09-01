@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header de todos los html*/
+
+.logo-decori {
+    width: 6.25rem;
+    margin-top: .625rem;
+    margin-left: .625rem;
+}
+
+.decori {
+    width: 18.75rem;
+    margin-top: -7.875rem;
+    margin-left: 5rem;
+}
+
+.barra-de-busqueda {
+    margin-left: 23.75rem;
+    margin-top: -6.8125rem;
+}
+
+.barra-de-busqueda input {
+    width: 87.5rem;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+    outline: none;
+}
+
+.carrito-de-compras {
+    position: absolute;
+    margin-top: -2.625rem;
+    margin-left: 114.0625rem;
+    width: 3rem;
+}
+
+.frase {
+    color: #494949;
+    margin-left: 690px;
+    margin-top: 40px;
+    font-size: 27px;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    gap: 9.375rem;
+    justify-content: center;
+    list-style: none;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.primer-separador {
+    margin-top: 40px;
+    color: white;
+    size: 100px;
+}
+
+body {
+    background-color: #212031;
+}
+
+/*index.html*/
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(2, 940px);
+    grid-template-rows: 500px 500px 600px;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 25px;
+}
+
+.pokemons {
+    grid-column: 1/ 2;
+    grid-row: 1 / 2;
+    border-style: solid;
+    border-color: white;
+}
+
+.pokemons h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.pokemons p {
+    color: #5647FF;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.pokemons img {
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.art-toys {
+    grid-column: 2/ 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    border-style: solid;
+    border-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.art-toys h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.art-toys p {
+    color: #5647FF;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.art-toys img {
+    width: 900px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.superheroes {
+    grid-column: 1 /2;
+    grid-row: 2/ 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-style: solid;
+    border-color: white;
+}
+
+.superheroes h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.superheroes p {
+    color: #5647FF;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.superheroes img {
+    width: 540px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+.figuras-clasicas {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-style: solid;
+    border-color: white;
+}
+
+.figuras-clasicas h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.figuras-clasicas p {
+    color: #5647FF;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.figuras-clasicas img:nth-child(2) {
+    width: 36%;
+
+}
+
+
+.figuras-clasicas img:nth-child(3) {
+    width: 26%;
+
+
+}
+
+.figuras-clasicas img:nth-child(4) {
+    width: 36%;
+}
+
+
+.los-mas-vendidos {
+    grid-column: 1 /3;
+    grid-row: 3/ 4;
+    border-style: solid;
+    border-color: white;
+}
+
+.los-mas-vendidos h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.los-mas-vendidos img {
+    height: 75%;
+    margin-left: -65px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+/*footer de todos los html*/
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+    margin: 6px;
+    border-style: solid;
+    border-color: white;
+}
+
+.titulos-footer ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 40px;
+    gap: 900px;
+    color: #494949;
+    list-style: none;
+}
+
+.enlaces-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -93px;
+}
+
+.enlaces-footer p {
+    padding-right: 550px;
+    margin-left: 200px;
+    color: black;
+}
+
+.enlaces-footer img {
+    margin-right: 20px;
+}
+
+.enlaces-footer img:nth-child(2) {
+    width: 90px;
+}
+
+.enlaces-footer img:nth-child(3) {
+    width: 70px;
+}
+
+.enlaces-footer img:nth-child(4) {
+    width: 120px;
+}
+
+.enlaces-footer img:nth-child(5) {
+    width: 80px;
+}
+
+.extra-footer {}
+
+/*ofertas.html*/
+
+.titulo-ofertas {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 45px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.primeras-tres-cards {
+    display: flex;
+    margin-left: 300px;
+}
+
+.ultimas-dos-cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 550px;
+    margin-left: -410px;
+}
+
+.cartas {
+    padding-right: 57px;
+}
