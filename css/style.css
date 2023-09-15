@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 /*header de todos los html*/
+
+body {
+    width: 100vw;
+}
 
 .logo-decori {
     width: 6.25rem;
@@ -19,12 +24,13 @@
 }
 
 .barra-de-busqueda {
-    margin-left: 23.75rem;
     margin-top: -6.8125rem;
+    margin-left: 23.75rem;
 }
 
 .barra-de-busqueda input {
-    width: 87.5rem;
+    font-family: 'verdana';
+    width: 92%;
     height: 2.5rem;
     padding: 0 1.25rem;
     font-size: 1.125rem;
@@ -34,28 +40,29 @@
 .carrito-de-compras {
     position: absolute;
     margin-top: -2.625rem;
-    margin-left: 114.0625rem;
+    margin-left: 1815px;
     width: 3rem;
 }
 
 .frase {
     color: #494949;
-    margin-left: 690px;
     margin-top: 40px;
+    margin-left: 690px;
     font-size: 27px;
-    font-family: 'Inter', sans-serif;
     font-style: italic;
+}
+
+.frase:hover {
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar {
     display: flex;
-    gap: 9.375rem;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     font-size: 40px;
-    font-family: 'Inter', sans-serif;
     margin-top: 50px;
-
+    width: 100%;
 }
 
 .navbar li a {
@@ -63,26 +70,108 @@
     text-decoration: none;
 }
 
-.primer-separador {
-    margin-top: 40px;
+.navbar li a:hover {
+    text-shadow: 6px 6px 8px #000000;
+}
+
+.separadores {
+    margin-top: 30px;
+    height: 3px;
+    background-color: white;
     color: white;
-    size: 100px;
+    opacity: 100%;
 }
 
 body {
     background-color: #212031;
 }
 
+/*footer de todos los html*/
+
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: white;
+    width: 100%;
+}
+
+.textos-redes {
+    color: #494949;
+    font-size: 40px;
+}
+
+.lorem-footer {
+    width: 25%;
+}
+
+.img-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.img-footer img {
+    width: 80px;
+}
+
+/*.titulos-footer  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    gap: 830px;
+    color: #494949;
+    list-style: none;
+}
+
+.enlaces-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -93px;
+} 
+
+.enlaces-footer p {
+    margin-top: 15px;
+    margin-left: 200px;
+    padding-right: 600px;
+    color: black;
+}
+
+.enlaces-footer img {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.enlaces-footer img:nth-child(2) {
+    width: 90px;
+}
+
+.enlaces-footer img:nth-child(3) {
+    width: 70px;
+}
+
+.enlaces-footer img:nth-child(4) {
+    width: 70px;
+}
+
+.enlaces-footer img:nth-child(5) {
+    width: 80px;
+}
+*/
 /*index.html*/
 
-.grid-main {
+.grid-main-index {
     display: grid;
-    grid-template-columns: repeat(2, 940px);
-    grid-template-rows: 500px 500px 600px;
+    grid-template-columns: repeat(2, 49%);
     justify-content: center;
     gap: 10px;
-    font-family: 'Inter', sans-serif;
-    margin-top: 25px;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .pokemons {
@@ -92,23 +181,34 @@ body {
     border-color: white;
 }
 
+.fotos-grid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/*
+.fotos-grid img {
+    width: 100%;
+}
+*/
 .pokemons h2 {
     color: white;
-    margin-left: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .pokemons p {
     color: #5647FF;
+    margin-top: 10px;
     margin-left: 20px;
-    margin-top: 10px
 }
 
+/*
 .pokemons img {
-    margin-left: 75px;
     margin-top: 20px;
+    margin-left: 75px;
 }
-
+*/
 .art-toys {
     grid-column: 2/ 3;
     grid-row: 1 / 2;
@@ -121,20 +221,14 @@ body {
 
 .art-toys h2 {
     color: white;
-    margin-left: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .art-toys p {
     color: #5647FF;
+    margin-top: 10px;
     margin-left: 20px;
-    margin-top: 10px
-}
-
-.art-toys img {
-    width: 900px;
-    margin-left: 20px;
-    margin-top: -20px;
 }
 
 .superheroes {
@@ -149,8 +243,8 @@ body {
 
 .superheroes h2 {
     color: white;
-    margin-left: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .superheroes p {
@@ -159,10 +253,7 @@ body {
     margin-top: 10px
 }
 
-.superheroes img {
-    width: 540px;
-    margin-left: 200px;
-    margin-top: 0px;
+.foto-superheroe {
 }
 
 .figuras-clasicas {
@@ -174,112 +265,143 @@ body {
 
 .figuras-clasicas h2 {
     color: white;
-    margin-left: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
 .figuras-clasicas p {
     color: #5647FF;
+    margin-top: 10px;
     margin-left: 20px;
-    margin-top: 10px
 }
 
-.figuras-clasicas img:nth-child(2) {
-    width: 36%;
-
+.clasicas {
+    display: flex;
+    width: 50%;
+    justify-content: center;
 }
 
-
-.figuras-clasicas img:nth-child(3) {
-    width: 26%;
-
-
+.clasicas img {
+width: 65%;
 }
-
-.figuras-clasicas img:nth-child(4) {
-    width: 36%;
-}
-
 
 .los-mas-vendidos {
-    grid-column: 1 /3;
-    grid-row: 3/ 4;
+    width: 98%;
+    margin-top: 10px;
+    margin-left: 1%;
     border-style: solid;
     border-color: white;
 }
 
 .los-mas-vendidos h2 {
     color: white;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-top: 20px;
     font-size: 40px;
 }
 
-.los-mas-vendidos img {
-    height: 75%;
-    margin-left: -65px;
-    margin-top: 50px;
-    justify-content: space-between;
+
+.los-mas-vendidos img:nth-child(2) {
+    width: 15%;
 }
 
-/*footer de todos los html*/
-
-.flex-footer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-    margin-top: 10px;
-    margin: 6px;
-    border-style: solid;
-    border-color: white;
+.los-mas-vendidos img:nth-child(3) {
+    width: 9%;
 }
 
-.titulos-footer ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    font-size: 40px;
-    gap: 900px;
-    color: #494949;
-    list-style: none;
+.los-mas-vendidos img:nth-child(4) {
+    width: 15%;
 }
 
-.enlaces-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: -93px;
+.los-mas-vendidos img:nth-child(5) {
+    width: 30%;
 }
 
-.enlaces-footer p {
-    padding-right: 550px;
-    margin-left: 200px;
-    color: black;
+.los-mas-vendidos img:nth-child(6) {
+    width: 20%;
 }
 
-.enlaces-footer img {
-    margin-right: 20px;
+@media (max-width:768px) {
+
+    /*responsive-all-header*/
+
+    .logo-decori {
+        width: 80px;
+    }
+
+    .decori {
+        width: 220px;
+    }
+
+    .barra-de-busqueda input {
+        margin-left: -80px;
+        margin-top: 25px;
+        width: 100%;
+        height: 33px;
+        font-size: 14px;
+    }
+
+    .carrito-de-compras {
+        margin-top: -35px;
+        margin-left: 92%;
+        width: 5%;
+    }
+
+    .frase {
+        margin-top: 30px;
+        margin-left: 250px;
+        font-size: 20px;
+    }
+
+    .navbar {
+        gap: 20px;
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+
+    /*responsive-all-footer*/
+
+    .titulos-footer ul {
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 25px;
+        gap: 400px;
+    }
+
+    .enlaces-footer {
+        margin-left: -300px;
+    }
+
+    .enlaces-footer p {
+        font-size: 5px;
+        margin-left: 500px;
+        padding-right: 0px;
+    }
+
+    .enlaces-footer img {
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    .enlaces-footer img:nth-child(2) {
+        width: 50px;
+    }
+
+    .enlaces-footer img:nth-child(3) {
+        width: 30px;
+    }
+
+    .enlaces-footer img:nth-child(4) {
+        width: 30px;
+    }
+
+    .enlaces-footer img:nth-child(5) {
+        width: 40px;
+    }
 }
 
-.enlaces-footer img:nth-child(2) {
-    width: 90px;
-}
-
-.enlaces-footer img:nth-child(3) {
-    width: 70px;
-}
-
-.enlaces-footer img:nth-child(4) {
-    width: 120px;
-}
-
-.enlaces-footer img:nth-child(5) {
-    width: 80px;
-}
-
-.extra-footer {}
+@media (max-width:320px) {}
 
 /*ofertas.html*/
 
@@ -288,22 +410,221 @@ body {
     justify-content: center;
     color: white;
     font-size: 45px;
-    font-family: 'Inter', sans-serif;
-
 }
 
-.primeras-tres-cards {
-    display: flex;
-    margin-left: 300px;
-}
+/*quienes-somos.html*/
 
-.ultimas-dos-cards {
+.main-quienes-somos {
     display: flex;
     flex-direction: row;
-    margin-top: 550px;
-    margin-left: -410px;
+    margin-top: 20px;
 }
 
-.cartas {
-    padding-right: 57px;
+.texto-general-quienes-somos {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    color: #5647FF;
+    text-shadow: 2px 2px 4px #000000;
+    padding-right: 100px;
+    margin-left: 250px;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.titulos-quienes-somos {
+    font-size: 40px;
+}
+
+.subtitulos-titulos-quienes-somos {
+    font-size: 20px;
+}
+
+.textos2-quienes-somos {
+    margin-top: 20px;
+}
+
+.textos3-quienes-somos {
+    margin-top: 20px;
+}
+
+.foto-quienes-somos {
+    float: left;
+    background-color: #1A5276;
+    margin: 10px 0 0 5px;
+    margin-top: 20px;
+    margin-right: 250px;
+}
+
+.foto-quienes-somos img {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    margin: -6px 6px 6px -6px;
+    width: 500px;
+    height: 710px;
+}
+
+/*crea-tu-cuenta.html e ingresa.html*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 625px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.4rem;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+    width: 500px;
+    height: 600px;
+}
+
+.form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+#heading {
+    text-align: center;
+    margin: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 25px;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    fill: white;
+}
+
+.input-field {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5rem;
+}
+
+.button1 {
+    padding: 0.5rem;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.button2 {
+    padding: 0.5rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+}
+
+.button3-crea-tu-cuenta {
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    padding-left: 75px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+    text-decoration: none;
+}
+
+.button3-crea-tu-cuenta:hover {
+    background-color: black;
+    color: white;
+}
+
+.button3-ingresa {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button3-ingresa:hover {
+    background-color: red;
+    color: white;
 }

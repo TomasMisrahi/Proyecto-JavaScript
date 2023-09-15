@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decori</title>
+    <title>Ofertas - Decori</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:ital,wght@1,100&display=swap"
@@ -13,23 +14,28 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div>
-            <img src="../assets/img/logo-proyecto-coder-house.png" alt="" class="logo-decori">
+            <a href="../index.html">
+                <img src="../assets/img/logo-proyecto-coder-house.png" alt="Logo Decori" class="logo-decori">
+            </a>
         </div>
         <div>
-            <img src="../assets/img/decori.png" alt="" class="decori">
+            <a href="../index.html">
+                <img src="../assets/img/decori.png" alt="Decori" class="decori">
+            </a>
         </div>
         <div class="barra-de-busqueda">
             <input type="text" placeholder="Buscar productos, marcas y ofertas" required>
         </div>
         <div>
-            <img src="../assets/img/carrito-de-compras.png" alt="" class="carrito-de-compras">
+            <img src="../assets/img/carrito-de-compras.png" alt="Carrito de compras" class="carrito-de-compras">
         </div>
-        <h1 class="frase">
+        <p class="frase">
             El único límite lo pones vos
-        </h1>
+        </p>
         <nav>
             <ul class="navbar">
                 <li><a href="../index.html">Inicio</a></li>
@@ -39,66 +45,86 @@
                 <li><a href="ingresa.html">Ingresá</a></li>
             </ul>
         </nav>
-        <hr class="primer-separador">
+        <hr class="separadores">
     </header>
     <main>
-        <section>
+        <div>
             <h1 class="titulo-ofertas">
                 Ofertas de la semana
             </h1>
-        </section>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <section class="primeras-tres-cards">
-                <div class="cartas">
-                    <div class="card bg-dark" style="width: 400px; height: 500px;">
-                        <img src="../assets/img/charmander-ofertas.png" alt="..." style="width: 320px;">
-                        <div class="card-body">
-                            <h5 class="text-white">$3600</h5>
-                            <p class="text-primary">Charmander musculoso 15 cm Pokemon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cartas">
-                    <div class="card bg-dark" style="width: 400px; height: 500px;">
-                        <img src="../assets/img/bearbrick-ofertas.png" alt="..." style="width: 200px;">
-                        <div class="card-body">
-                            <h5 class="text-white">$11050</h5>
-                            <p class="text-primary">Bearbrick Louis Vuitton 45 cm Art Toy</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cartas">
-                    <div class="card bg-dark" style="width: 400px; height: 500px;">
-                        <img src="../assets/img/miles-ofertas.png" alt="..." style="width: 220px;">
-                        <div class="card-body">
-                            <h5 class="text-white">$7650</h5>
-                            <p class="text-primary">Miles Morales 10 cm Busto de superheroe</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="ultimas-dos-cards">
-                <div class="cartas">
-                    <div class="card bg-dark" style="width: 400px; height: 500px;">
-                        <img src="../assets/img/donkey-kong-ofertas.png" alt="..." style="width: 350px;">
-                        <div class="card-body">
-                            <h5 class="text-white">$5250</h5>
-                            <p class="text-primary">Donkey Kong 18 cm Figura clásica</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cartas">
-                    <div class="card bg-dark" style="width: 400px; height: 500px;">
-                        <img src="../assets/img/stitch-ofertas.png" class="card-img-top" alt="... "
-                            style="width: 360px;">
-                        <div class="card-body">
-                            <h5 class="text-white">$8550</h5>
-                            <p class="text-primary">Stitch 24 cm Figura clásica</p>
-                        </div>
-                    </div>
-                </div>
         </div>
-        </section>
+        <div class="d-flex" style="margin-left: 25px;">
+            <div class="col-sm">
+                <div class="card bg-dark" style="width: 350px; height: 500px;">
+                    <img src="../assets/img/charmander-ofertas.png" alt="Figura de Charmander musculoso"
+                        style="width: 320px; margin-left: 15px; margin-top: 10px;">
+                    <div class="card-body">
+                        <h5 class="text-white">$3600</h5>
+                        <p class="text-primary text-center">Charmander musculoso 15 cm <br> Pokemon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card bg-dark" style="width: 350px; height: 500px;">
+                    <img src="../assets/img/bearbrick-ofertas.png" alt="Figura de un Art toy de Bearbrick Louis Vuitton"
+                        style="width: 200px; margin-left: 75px; margin-top: 10px;">
+                    <div class="card-body">
+                        <h5 class="text-white">$11050</h5>
+                        <p class="text-primary text-center">Bearbrick Louis Vuitton 45 cm <br> Art Toy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card bg-dark" style="width: 350px; height: 500px;">
+                    <img src="../assets/img/miles-ofertas.png" alt="Busto de Miles Morales" style="width: 220px; margin-left: 60px;">
+                    <div class="card-body" style="margin-top: -7px;">
+                        <h5 class="text-white">$7650</h5>
+                        <p class="text-primary text-center">Miles Morales 10 cm br <br> Busto de superheroe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card bg-dark" style="width: 350px; height: 500px;">
+                    <img src="../assets/img/donkey-kong-ofertas.png" alt="Figura de Donkey Kong"
+                        style="width: 350px; margin-left: -5px; margin-top: -5px;">
+                    <div class="card-body" style="margin-top: -5px;">
+                        <h5 class="text-white">$5250</h5>
+                        <p class="text-primary text-center">Donkey Kong 18 cm <br> Figura clásica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card bg-dark" style="width: 350px; height: 500px;">
+                    <img src="../assets/img/stitch-ofertas.png" alt="Figura de Stitch"
+                        style="width: 330px; margin-left: 10px; margin-top: 10px;">
+                    <div class="card-body" style="margin-top: 11px;">
+                        <h5 class="text-white">$8550</h5>
+                        <p class="text-primary text-center">Stitch 24 cm <br> Figura clásica</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="separadores">
+        <div class="d-flex align-items-center">
+            <div class="col-sm text-white text-center">
+                <h2 style="font-size: 45px; margin-top: 10px;">
+                    <p>Solo por el mes de la niñes</p>
+                    <p style="color: black; font-size: 70px;">3x2 y 4x3</p>
+                    <p>en los siguientes productos:</p>
+                </h2>
+            </div>
+            <div class="col-sm">
+                <img src="../assets/img/pokemons.png" alt="Pokemones mamadisimos" style="margin-top: -50px;">
+            </div>
+            <div class="col-sm">
+                <img src="../assets/img/superheroes.png" alt="Bustos de superheroes" style="width: 480px; margin-top: -20px;">
+            </div>
+        </div>
+            <div class="d-flex justify-content-end text-primary"
+                style="margin-top: -20px; padding-right: 145px; gap: 315px;">
+                <h3>Pokemons musculosos</h3>
+                <h3>Bustos de superheroes</h3>
+            </div>
     </main>
     <footer class="flex-footer">
         <section class="titulos-footer">
@@ -111,12 +137,10 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit dolorum
                 atque delectus ex sunt quod necessitatibus, fugiat sequi unde voluptates facilis, placeat perspiciatis
                 aliquam praesentium dignissimos error eos ipsam!</p>
-            <img src="../assets/img/facebook.png" alt="">
-            <img src="../assets/img/instagram.png" alt="">
-            <img src="../assets/img/tik-tok.png" alt="">
-            <img src="../assets/img/twitter.png" alt="">
-        </section>
-        <section class="extra-footer">
+            <img src="../assets/img/facebook.png" alt="Facebook">
+            <img src="../assets/img/instagram.png" alt="Instagram">
+            <img src="../assets/img/tik-tok.png" alt="Tik tok">
+            <img src="../assets/img/twitter.png" alt="Twitter">
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -126,4 +150,5 @@
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
