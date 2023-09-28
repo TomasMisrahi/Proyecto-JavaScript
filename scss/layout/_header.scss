@@ -1,0 +1,76 @@
+header {
+    .header-up {
+        display: flex;
+        justify-content: start;
+
+        .logo-decori {
+            width: 6.25rem;
+            margin-top: .625rem;
+            margin-left: .625rem;
+        }
+
+        .decori {
+            width: 18.75rem;
+            margin-top: -11px;
+            margin-left: -25px;
+        }
+
+        .barra-de-busqueda {
+            margin-top: 33px;
+            padding: 10px;
+            width: 72%;
+            height: 40px;
+            font-family: 'verdana';
+            font-size: 15px;
+            outline: none;
+        }
+
+        .carrito-de-compras {
+            margin-top: 30px;
+            margin-left: 45px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+        color: #494949;
+        font-size: 27px;
+        font-style: italic;
+
+        &:hover {
+            text-shadow: 2px 2px 4px #000000;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size: 40px;
+            margin-top: 40px;
+            width: 100%;
+            margin: none;
+            padding: none;
+        }
+
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    text-shadow: 6px 6px 8px #000000;
+                }
+            }
+        }
+    }
+
+    .separador-horizontal {
+        @include separador-horizontal;
+    }
+}

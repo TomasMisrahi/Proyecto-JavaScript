@@ -1,0 +1,85 @@
+.grid-main-index {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+
+    .pokemons {
+        @include grids-main-index;
+
+        .fotos-grid-index img {
+            width: 90%
+        }
+    }
+
+    .art-toys {
+        @include grids-main-index;
+        grid-column: 2/ 3;
+        grid-row: 1 / 2;
+
+        .fotos-grid-index img {
+            width: 90%
+        }
+    }
+
+    .superheroes {
+        @include grids-main-index;
+        grid-column: 1/ 2;
+        grid-row: 2 / 3;
+
+        .fotos-grid-index img {
+            width: 60%;
+        }
+    }
+
+    .figuras-clasicas {
+        @include grids-main-index;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        .fotos-grid-index img {
+            width: 30%;
+        }
+    }
+}
+
+.los-mas-vendidos {
+    width: 98.6%;
+    margin-top: 10px;
+    margin-left: 14px;
+    border-style: solid;
+    border-color: white;
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+    }
+
+    img:nth-child(2) {
+        width: 19%;
+    }
+
+    img:nth-child(3) {
+        width: 11%;
+        margin-bottom: 20px;
+    }
+
+    img:nth-child(4) {
+        width: 16%;
+        margin-bottom: 10px;
+    }
+
+    img:nth-child(5) {
+        width: 27%;
+        margin-bottom: 10px;
+    }
+
+    img:nth-child(6) {
+        width: 23%;
+        margin-bottom: 30px;
+    }
+}
