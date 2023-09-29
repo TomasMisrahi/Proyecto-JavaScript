@@ -1,5 +1,6 @@
 @mixin separador-horizontal {
     margin-top: 30px;
+    margin-bottom: 0px;
     height: 3px;
     background-color: white;
     color: white;
@@ -21,7 +22,7 @@
             margin-left: 20px;
         }
 
-        p {
+        h3 {
             color: $color-texto-subtitulos;
             margin-top: 10px;
             margin-left: 20px;

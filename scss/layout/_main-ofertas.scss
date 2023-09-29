@@ -2,3 +2,8 @@
     border-color: #4A4F85;
     border-width: 2px;
 }
+
+.separador-horizontal {
+    @include separador-horizontal;
+}
+

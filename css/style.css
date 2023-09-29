@@ -11,15 +11,15 @@ body {
 
 header .header-up {
   display: flex;
-  justify-content: start;
+  align-content: center;
 }
 header .header-up .logo-decori {
-  width: 6.25rem;
-  margin-top: 0.625rem;
-  margin-left: 0.625rem;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 header .header-up .decori {
-  width: 18.75rem;
+  width: 300px;
   margin-top: -11px;
   margin-left: -25px;
 }
@@ -55,9 +55,9 @@ header nav ul {
   list-style: none;
   font-size: 40px;
   margin-top: 40px;
-  width: 100%;
   margin: none;
   padding: none;
+  width: 100%;
 }
 header nav li a {
   color: white;
@@ -68,6 +68,7 @@ header nav li a:hover {
 }
 header .separador-horizontal {
   margin-top: 30px;
+  margin-bottom: 0px;
   height: 3px;
   background-color: white;
   color: white;
@@ -76,6 +77,7 @@ header .separador-horizontal {
 
 footer hr {
   margin-top: 30px;
+  margin-bottom: 0px;
   height: 3px;
   background-color: white;
   color: white;
@@ -105,7 +107,7 @@ footer div .zonas-footer .zona-ayuda {
   color: black;
 }
 footer div .zonas-footer .zona-ayuda img {
-  margin-top: 2px;
+  margin-top: 4px;
   margin-left: 75px;
   width: 4%;
 }
@@ -146,7 +148,7 @@ footer div .zonas-footer div img {
   margin-top: 20px;
   margin-left: 20px;
 }
-.grid-main-index .pokemons div p {
+.grid-main-index .pokemons div h3 {
   color: #5647FF;
   margin-top: 10px;
   margin-left: 20px;
@@ -173,7 +175,7 @@ footer div .zonas-footer div img {
   margin-top: 20px;
   margin-left: 20px;
 }
-.grid-main-index .art-toys div p {
+.grid-main-index .art-toys div h3 {
   color: #5647FF;
   margin-top: 10px;
   margin-left: 20px;
@@ -200,7 +202,7 @@ footer div .zonas-footer div img {
   margin-top: 20px;
   margin-left: 20px;
 }
-.grid-main-index .superheroes div p {
+.grid-main-index .superheroes div h3 {
   color: #5647FF;
   margin-top: 10px;
   margin-left: 20px;
@@ -227,7 +229,7 @@ footer div .zonas-footer div img {
   margin-top: 20px;
   margin-left: 20px;
 }
-.grid-main-index .figuras-clasicas div p {
+.grid-main-index .figuras-clasicas div h3 {
   color: #5647FF;
   margin-top: 10px;
   margin-left: 20px;
@@ -241,7 +243,8 @@ footer div .zonas-footer div img {
 }
 
 .los-mas-vendidos {
-  width: 98.6%;
+  width: 98.5%;
+  height: 100%;
   margin-top: 10px;
   margin-left: 14px;
   border-style: solid;
@@ -276,6 +279,15 @@ footer div .zonas-footer div img {
 .hover-effect :hover {
   border-color: #4A4F85;
   border-width: 2px;
+}
+
+.separador-horizontal {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 3px;
+  background-color: white;
+  color: white;
+  opacity: 100%;
 }
 
 .main-quienes-somos {
@@ -345,82 +357,7 @@ footer div .zonas-footer div img {
   -webkit-animation: slide-in-elliptic-left-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-left-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.main-crea-tu-cuenta .form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 710px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 6.4px;
-  background-color: #171717;
-  border-radius: 25px;
-  transition: 0.4s ease-in-out;
-  width: 500px;
-  height: 600px;
-}
-.main-crea-tu-cuenta .form .form:hover {
-  transform: scale(1.05);
-  border: 1px solid black;
-}
-.main-crea-tu-cuenta .form #heading {
-  text-align: center;
-  margin: 2rem;
-  color: rgb(255, 255, 255);
-  font-size: 2.5rem;
-}
-.main-crea-tu-cuenta .form .field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border-radius: 25px;
-  padding: 0.6rem;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #171717;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-.main-crea-tu-cuenta .form .field .input-icon {
-  height: 1.3rem;
-  width: 1.3rem;
-  fill: white;
-}
-.main-crea-tu-cuenta .form .field .input-field {
-  font-size: 1rem;
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: #d3d3d3;
-}
-.main-crea-tu-cuenta .form .btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 2.5rem;
-}
-.main-crea-tu-cuenta .form .btn .button1 {
-  padding: 0.5rem;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
-  border-radius: 5px;
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
-  border: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-  background-color: #252525;
-  color: white;
-}
-.main-crea-tu-cuenta .form .btn .button1 .button1:hover {
-  background-color: black;
-  color: white;
-}
-.main-crea-tu-cuenta .form .button3-crea-tu-cuenta {
+.main-crea-tu-cuenta form .button3-crea-tu-cuenta {
   margin-bottom: 3rem;
   padding: 0.5rem;
   padding-left: 75px;
@@ -433,7 +370,7 @@ footer div .zonas-footer div img {
   color: white;
   text-decoration: none;
 }
-.main-crea-tu-cuenta .form .button3-crea-tu-cuenta .button3-crea-tu-cuenta:hover {
+.main-crea-tu-cuenta form .button3-crea-tu-cuenta:hover {
   background-color: black;
   color: white;
 }
@@ -470,11 +407,7 @@ footer div .zonas-footer div img {
     opacity: 1;
   }
 }
-.main-ingresa {
-  -webkit-animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-.main-ingresa .form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -490,17 +423,17 @@ footer div .zonas-footer div img {
   width: 500px;
   height: 600px;
 }
-.main-ingresa .form .form:hover {
+.form .form:hover {
   transform: scale(1.05);
   border: 1px solid black;
 }
-.main-ingresa .form #heading {
+.form #heading {
   text-align: center;
   margin: 2rem;
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
 }
-.main-ingresa .form .field {
+.form .field {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,12 +446,12 @@ footer div .zonas-footer div img {
   background-color: #171717;
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
-.main-ingresa .form .field .input-icon {
+.form .field .input-icon {
   height: 1.3rem;
   width: 1.3rem;
   fill: white;
 }
-.main-ingresa .form .field .input-field {
+.form .field .input-field {
   font-size: 1rem;
   background: none;
   border: none;
@@ -526,13 +459,13 @@ footer div .zonas-footer div img {
   width: 100%;
   color: #d3d3d3;
 }
-.main-ingresa .form .btn {
+.form .btn {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 2.5rem;
 }
-.main-ingresa .form .btn .button1 {
+.form .btn .button1 {
   padding: 0.5rem;
   padding-left: 1.1em;
   padding-right: 1.1em;
@@ -545,11 +478,16 @@ footer div .zonas-footer div img {
   background-color: #252525;
   color: white;
 }
-.main-ingresa .form .btn .button1 .button1:hover {
+.form .btn .button1:hover {
   background-color: black;
   color: white;
 }
-.main-ingresa .form .button3-ingresa {
+
+.main-ingresa {
+  -webkit-animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-right 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.main-ingresa form .button3-ingresa {
   margin-bottom: 3em;
   padding: 0.5em;
   border-radius: 5px;
@@ -560,7 +498,7 @@ footer div .zonas-footer div img {
   background-color: #252525;
   color: white;
 }
-.main-ingresa .form .button3-ingresa .button3-ingresa:hover {
+.main-ingresa form .button3-ingresa:hover {
   background-color: red;
   color: white;
 }
@@ -606,6 +544,91 @@ footer div .zonas-footer div img {
   }
 }
 /*responsive-header*/
+@media (max-width: 1024px) {
+  header .header-up .logo-decori {
+    width: 85px;
+  }
+  header .header-up .decori {
+    margin-top: 0px;
+    width: 220px;
+  }
+  header .header-up .barra-de-busqueda {
+    margin-top: 32px;
+    margin-left: -10px;
+    width: 65%;
+    height: 30px;
+    font-size: 10px;
+  }
+  header .header-up .carrito-de-compras {
+    margin-top: 30px;
+    margin-left: 19px;
+    width: 3.5%;
+    height: 100%;
+  }
+  header p {
+    margin-top: -20px;
+    font-size: 22px;
+  }
+  header nav ul {
+    gap: 45px;
+    font-size: 30px;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  header .separador-horizontal {
+    margin-top: 15px;
+    width: 100%;
+    height: 3px;
+  }
+  /*responsive-footer*/
+  footer hr {
+    margin-top: 20px;
+  }
+  footer div .zonas-footer {
+    margin-top: 7px;
+  }
+  footer div .zonas-footer .titulos-footer {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  footer div .zonas-footer .zona-ayuda {
+    margin-top: 0px;
+    margin-left: 45px;
+    gap: 20px;
+    font-size: 13px;
+  }
+  footer div .zonas-footer .zona-ayuda img {
+    margin-top: 0px;
+    margin-right: -18px;
+    margin-left: 0px;
+  }
+  footer div hr {
+    margin-top: 26px;
+    width: 12%;
+    height: 0%;
+  }
+  footer div .zonas-footer div {
+    display: flex;
+    margin-left: 10px;
+    gap: 20px;
+  }
+  footer div .zonas-footer div img {
+    width: 50px;
+  }
+  /*responsive-main-index*/
+  .grid-main-index {
+    margin-top: 20px;
+  }
+  .los-mas-vendidos {
+    width: 99%;
+    margin-left: 5px;
+  }
+  .los-mas-vendidos h2 {
+    font-size: 30px;
+  }
+  /*responsive-main-ofertas*/
+}
+/*responsive-header*/
 @media (max-width: 768px) {
   header .header-up .logo-decori {
     width: 80px;
@@ -640,60 +663,51 @@ footer div .zonas-footer div img {
   }
   header .separador-horizontal {
     margin-top: 15px;
-    width: 110%;
+    width: 100%;
     height: 3px;
   }
   /*responsive-footer*/
   footer hr {
-    margin-top: 30px;
-    height: 3px;
-    background-color: white;
-    color: white;
-    opacity: 100%;
+    margin-top: 20px;
   }
   footer div .zonas-footer {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 5px;
   }
   footer div .zonas-footer .titulos-footer {
     margin-left: 5px;
-    color: #494949;
     font-size: 20px;
   }
   footer div .zonas-footer .zona-ayuda {
-    display: flex;
-    align-items: center;
     margin-top: 0px;
-    margin-left: 20px;
-    gap: 7px;
+    margin-left: 30px;
+    gap: 11px;
     font-size: 10px;
-    color: black;
   }
   footer div .zonas-footer .zona-ayuda img {
-    margin-top: 2px;
+    margin-top: 0px;
+    margin-right: -8px;
     margin-left: 0px;
-    width: 4%;
   }
   footer div hr {
-    margin-top: 27px;
-    width: 17%;
+    margin-top: 20px;
+    width: 13%;
     height: 0%;
-    transform: rotate(90deg);
-    opacity: 10%;
   }
   footer div .zonas-footer div {
     display: flex;
-    margin-left: 5px;
-    gap: 5px;
+    margin-left: 0px;
+    gap: 10px;
   }
   footer div .zonas-footer div img {
     width: 40px;
   }
   /*responsive-main-index*/
+  .grid-main-index {
+    margin-top: 20px;
+  }
   .los-mas-vendidos {
-    margin-left: 6px;
+    width: 99.2%;
+    margin-left: 3px;
   }
   .los-mas-vendidos h2 {
     font-size: 30px;

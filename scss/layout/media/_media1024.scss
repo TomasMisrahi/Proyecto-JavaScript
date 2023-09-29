@@ -1,0 +1,123 @@
+/*responsive-header*/
+
+@media (max-width:1024px) {
+    header {
+        .header-up {
+            .logo-decori {
+                width: 85px;
+            }
+
+            .decori {
+                margin-top: 0px;
+                width: 220px;
+            }
+
+            .barra-de-busqueda {
+                margin-top: 32px;
+                margin-left: -10px;
+                width: 65%;
+                height: 30px;
+                font-size: 10px;
+            }
+
+            .carrito-de-compras {
+                margin-top: 30px;
+                margin-left: 19px;
+                width: 3.5%;
+                height: 100%;
+            }
+        }
+
+        p {
+            margin-top: -20px;
+            font-size: 22px;
+        }
+
+        nav {
+            ul {
+                gap: 45px;
+                font-size: 30px;
+                margin-top: 25px;
+                justify-content: center;
+            }
+        }
+
+        .separador-horizontal {
+            margin-top: 15px;
+            width: 100%;
+            height: 3px;
+        }
+    }
+
+    /*responsive-footer*/
+
+    footer {
+        hr {
+            margin-top: 20px;
+        }
+
+        div {
+
+            .zonas-footer {
+                margin-top: 7px;
+
+                .titulos-footer {
+                    margin-left: 10px;
+                    font-size: 25px;
+                }
+
+                .zona-ayuda {
+                    margin-top: 0px;
+                    margin-left: 45px;
+                    gap: 20px;
+                    font-size: 13px;
+
+                    img {
+                        margin-top: 0px;
+                        margin-right: -18px;
+                        margin-left: 0px;
+                    }
+                }
+            }
+
+            hr {
+                margin-top: 26px;
+                width: 12%;
+                height: 0%;
+            }
+
+            .zonas-footer {
+
+                div {
+                    display: flex;
+                    margin-left: 10px;
+                    gap: 20px;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    /*responsive-main-index*/
+
+    .grid-main-index {
+        margin-top: 20px;
+    }
+
+    .los-mas-vendidos {
+        width: 99.0%;
+        margin-left: 5px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    /*responsive-main-ofertas*/
+
+}

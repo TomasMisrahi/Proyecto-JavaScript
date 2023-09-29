@@ -1,16 +1,16 @@
 header {
     .header-up {
         display: flex;
-        justify-content: start;
+        align-content: center;
 
         .logo-decori {
-            width: 6.25rem;
-            margin-top: .625rem;
-            margin-left: .625rem;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
         }
 
         .decori {
-            width: 18.75rem;
+            width: 300px;
             margin-top: -11px;
             margin-left: -25px;
         }
@@ -53,9 +53,9 @@ header {
             list-style: none;
             font-size: 40px;
             margin-top: 40px;
-            width: 100%;
             margin: none;
             padding: none;
+            width: 100%
         }
 
         li {
