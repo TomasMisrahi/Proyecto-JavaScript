@@ -1,5 +1,3 @@
-/*Lo que falta hacer: (for)*/
-
 let test = prompt("Si queres saber si sos capaz de ser streamer coloque si");
 
 while (test != "no") {
