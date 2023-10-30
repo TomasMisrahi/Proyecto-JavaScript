@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,10 @@
             <a href="../index.html">
                 <img src="../assets/img/decori.png" alt="Decori" class="decori">
             </a>
-            <input type="text" placeholder="Buscar productos, marcas y ofertas" required class="barra-de-busqueda">
+            <input type="search" placeholder="Buscar productos, marcas y ofertas" required class="barra-de-busqueda">
+            <button type="submit" class="boton-de-busqueda">
+                <img src="../assets/img/lupa-de-busqueda.png" alt="lupa de busqueda">
+            </button>
             <img src="../assets/img/carrito-de-compras.png" alt="Carrito de compras" class="carrito-de-compras">
         </div>
         <p style="margin-bottom: -10px;">
@@ -47,84 +50,78 @@
         </nav>
         <hr class="separador-horizontal">
     </header>
-    <main>
-        <div>
-            <h1 class="d-flex justify-content-center text-white" style="font-size: 45px; margin-top: 10px">
+    <main class="main-ofertas">
+        <div class="titulo1-ofertas">
+            <h1>
                 Ofertas de la semana
             </h1>
         </div>
-        <div class="d-flex" style="margin-left: 25px;">
-            <div class="col-sm hover-effect">
-                <div class="card" style="width: 350px; height: 500px; background-color: #242336;">
+        <div class="grupo-cards">
+            <div class="col-10 col-sm-12 col-md-5 col-lg-4 col-xxl hover-effect">
+                <div class="card">
                     <img src="../assets/img/charmander-ofertas.png" alt="Figura de Charmander musculoso"
-                        style="width: 320px; margin-left: 15px; margin-top: 10px;">
+                        class="charmander-ofertas">
                     <div class="card-body">
-                        <h5 class="text-white">$3600</h5>
-                        <p class="text-center" style="color: #5647FF;">Charmander musculoso 15 cm <br> Pokemon</p>
+                        <h3>$3600</h3>
+                        <p>Charmander musculoso 15 cm <br> Pokemon</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm hover-effect">
-                <div class="card" style="width: 350px; height: 500px; background-color: #242336;">
+            <div class="col-10 col-sm-12 col-md-5 col-lg-4 col-xxl hover-effect">
+                <div class="card">
                     <img src="../assets/img/bearbrick-ofertas.png" alt="Figura de un Art toy de Bearbrick Louis Vuitton"
-                        style="width: 200px; margin-left: 75px; margin-top: 10px;">
+                        class="bearbrick-ofertas">
                     <div class="card-body">
-                        <h5 class="text-white">$11050</h5>
-                        <p class="text-center" style="color: #5647FF;">Bearbrick Louis Vuitton 45 cm <br> Art Toy</p>
+                        <h3>$11050</h3>
+                        <p>Bearbrick Louis Vuitton 45 cm <br> Art Toy</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm hover-effect">
-                <div class="card" style="width: 350px; height: 500px; background-color: #242336;">
-                    <img src="../assets/img/miles-ofertas.png" alt="Busto de Miles Morales"
-                        style="width: 220px; margin-left: 60px;">
+            <div class="col-10 col-sm-12 col-md-5 col-lg-4 col-xxl hover-effect">
+                <div class="card">
+                    <img src="../assets/img/miles-ofertas.png" alt="Busto de Miles Morales" class="miles-ofertas">
                     <div class="card-body" style="margin-top: -7px;">
-                        <h5 class="text-white">$7650</h5>
-                        <p class="text-center" style="color: #5647FF;">Miles Morales 10 cm br <br> Busto de superheroe
+                        <h3>$7650</h3>
+                        <p>Miles Morales 10 cm <br> Busto de superheroe
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm hover-effect">
-                <div class="card" style="width: 350px; height: 500px; background-color: #242336;">
+            <div class="col-10 col-sm-12 col-md-5 col-lg-4 col-xxl hover-effect">
+                <div class="card">
                     <img src="../assets/img/donkey-kong-ofertas.png" alt="Figura de Donkey Kong"
-                        style="width: 350px; margin-left: -5px; margin-top: -5px;">
+                        class="donkey-kong-ofertas">
                     <div class="card-body" style="margin-top: -5px;">
-                        <h5 class="text-white">$5250</h5>
-                        <p class="text-center" style="color: #5647FF;">Donkey Kong 18 cm <br> Figura clásica</p>
+                        <h3>$5250</h3>
+                        <p>Donkey Kong 18 cm <br> Figura clásica</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm hover-effect">
-                <div class="card" style="width: 350px; height: 500px; background-color: #242336;">
-                    <img src="../assets/img/stitch-ofertas.png" alt="Figura de Stitch"
-                        style="width: 330px; margin-left: 10px; margin-top: 10px;">
+            <div class="col-10 col-sm-12 col-md-5 col-lg-4 col-xxl hover-effect">
+                <div class="card">
+                    <img src="../assets/img/stitch-ofertas.png" alt="Figura de Stitch" class="stitch-ofertas">
                     <div class="card-body" style="margin-top: 11px;">
-                        <h5 class="text-white">$8550</h5>
-                        <p class="text-center" style="color: #5647FF;">Stitch 24 cm <br> Figura clásica</p>
+                        <h3>$8550</h3>
+                        <p>Stitch 24 cm <br> Figura clásica</p>
                     </div>
                 </div>
             </div>
         </div>
         <hr class="separador-horizontal">
-        <div class="d-flex align-items-center">
-            <div class="col-sm text-white text-center">
-                <h2 style="font-size: 45px; margin-top: 10px;">
-                    <p>Solo por el mes de la niñes</p>
-                    <p style="color: black; font-size: 70px;">3x2 y 4x3</p>
+        <div class="zona2-ofertas">
+            <div class="texto-niñez">
+                <h2>
+                    <p>Solo por el mes de la niñez</p>
+                    <p>3x2 y 4x3</p>
                     <p>en los siguientes productos:</p>
                 </h2>
             </div>
-            <div class="col-sm">
-                <img src="../assets/img/pokemons.png" alt="Pokemones mamadisimos" style="margin-top: -20px;">
-            </div>
-            <div class="col-sm">
-                <img src="../assets/img/superheroes.png" alt="Bustos de superheroes"
-                    style="width: 480px; margin-top: -10px; margin-left: 25px;">
+            <div class="imagenes-niñez">
+                <img src="../assets/img/pokemons.png" alt="Pokemones mamadisimos" class="foto1-niñez">
+                <img src="../assets/img/superheroes.png" alt="Bustos de superheroes" class="foto2-niñez">
             </div>
         </div>
-        <div class="d-flex justify-content-end"
-            style="margin-top: -15px; margin-right: 130px; gap: 335px; color: #5647FF;">
+        <div class="texto-imagenes-niñez">
             <h3>Pokemons musculosos</h3>
             <h3>Bustos de superheroes</h3>
         </div>

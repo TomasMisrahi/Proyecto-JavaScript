@@ -7,6 +7,16 @@
     opacity: 100%;
 }
 
+@mixin separador-horizontal-media-1{
+    margin-top: 15px;
+    height: 3px;
+}
+
+@mixin separador-horizontal-media-2{
+    margin-top: 10px;
+    height: 2px;
+}
+
 @mixin grids-main-index {
     grid-column: 1/ 2;
     grid-row: 1 / 2;
@@ -33,4 +43,10 @@
         display: flex;
         justify-content: center;
     }
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: start;
+    margin-left: 30px;
 }

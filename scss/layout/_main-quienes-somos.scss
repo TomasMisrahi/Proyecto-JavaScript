@@ -1,7 +1,25 @@
+
 .main-quienes-somos {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+
+    .foto-quienes-somos {
+        background-color: #1A5276;
+        margin: 10px 0 0 5px;
+        margin-top: 20px;
+        margin-right: 250px;
+
+        img {
+            display: flex;
+            justify-content: start;
+            position: relative;
+            background-color: #fff;
+            margin: -6px 6px 6px -6px;
+            width: 500px;
+            height: 710px;
+        }
+    }
 
     .texto-general-quienes-somos {
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -24,26 +42,6 @@
             margin-top: 20px;
         }
 
-        .textos3-quienes-somos {
-            @extend .textos2-quienes-somos;
-        }
-    }
-
-    .foto-quienes-somos {
-        float: left;
-        background-color: #1A5276;
-        margin: 10px 0 0 5px;
-        margin-top: 20px;
-        margin-right: 250px;
-
-        img {
-            display: block;
-            position: relative;
-            background-color: #fff;
-            margin: -6px 6px 6px -6px;
-            width: 500px;
-            height: 710px;
-        }
     }
 }
 
