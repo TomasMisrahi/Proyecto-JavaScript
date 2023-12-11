@@ -67,7 +67,7 @@ footer {
 footer .textos1-footer, footer .textos2-footer {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
   font-size: 30px;
   gap: 50px;
   color: #45220A;

@@ -16,7 +16,7 @@
         <a href="#">
             <img src="./assets/img/cafeina.png" alt="Cafeina" class="cafeina">
         </a>
-        <input type="search" placeholder="Buscá tu cafe favorito" required class="barra-de-busqueda">
+        <input id="search" type="search" placeholder="Buscá tu cafe favorito" required class="barra-de-busqueda">
         <button type="submit" class="boton-de-busqueda">
             <img src="./assets/img/lupa-de-busqueda.png" alt="lupa de busqueda">
         </button>
@@ -25,33 +25,32 @@
     <main class="main-index">
         <div class="cards-zona1">
             <div class="botones">
-                <button class="boton-1" category="all">Todo</button>
-                <button class="boton-2" category="nescafe">Nescafe</button>
-                <button class="boton-3" category="martinez">Martinez</button>
-                <button class="boton-4" category="starbucks">Starbucks</button>
-                <button class="boton-5" category="cabrales">Cabrales</button>
+                <button id="boton-1" category="all">Todo</button>
+                <button id="boton-2" category="nescafe">Nescafe</button>
+                <button id="boton-3" category="martinez">Martinez</button>
+                <button id="boton-4" category="starbucks">Starbucks</button>
+                <button id="boton-5" category="cabrales">Cabrales</button>
             </div>
-            
-            <div class="card-1">
+
+            <div class="card-1 cafe">
                 <button class="button-1">+</button>
                 <img src="./assets/img/nescafe-gold-suave.png" alt="" class="img-card-1">
                 <h2 class="titulos-productos">Nescafe <span style="color: #D4AF37;">Gold</span> Suave</h2>
                 <h3>$4800</h3>
-
             </div>
-            <div class="card-2">
+            <div class="card-2 cafe">
                 <button class="button-2">+</button>
                 <img src="./assets/img/nescafe-gold-intenso.png" alt="" class="img-card-2">
                 <h2 class="titulos-productos">Nescafe <span style="color: #D4AF37;">Gold</span> Intenso</h2>
                 <h3>$5300</h3>
             </div>
-            <div class="card-3">
+            <div class="card-3 cafe">
                 <button class="button-3">+</button>
                 <img src="./assets/img/martinez-selecto.png" alt="" class="img-card-3">
                 <h2 class="titulos-productos">Martinez <span style="color: #b59410 ;">Selecto</span> Equilibrado</h2>
                 <h3>$6000</h3>
             </div>
-            <div class="card-4">
+            <div class="card-4 cafe">
                 <button class="button-4">+</button>
                 <img src="./assets/img/martinez-colombia.png" alt="" class="img-card-4">
                 <h2 class="titulos-productos">Martinez <span style="color: orange ;">Colombia</span> Suave</h2>
@@ -60,31 +59,32 @@
 
         </div>
         <div class="cards-zona2">
-            <div class="card-5">
+            <div class="card-5 cafe">
                 <button class="button-5">+</button>
                 <img src="./assets/img/starbucks-espresso-roast.png" alt="" class="img-card-5">
                 <h2 class="titulos-productos">Starbucks <span style="color: darkviolet ;">Espresso</span> Roast</h2>
                 <h3>$10000</h3>
             </div>
-            <div class="card-6">
+            <div class="card-6 cafe">
                 <button class="button-6">+</button>
                 <img src="./assets/img/starbucks-house-blend.png" alt="" class="img-card-6">
                 <h2 class="titulos-productos">Starbucks <span style="color: chocolate ;">House</span> Blend</h2>
                 <h3>$10000</h3>
             </div>
-            <div class="card-7">
+            <div class="card-7 cafe">
                 <button class="button-7">+</button>
                 <img src="./assets/img/cabrales-colombia.png" alt="" class="img-card-7">
                 <h2 class="titulos-productos">Cabrales <span style="color: #FF7E24 ;">Colombia</span></h2>
                 <h3>$5500</h3>
             </div>
-            <div class="card-8">
+            <div class="card-8 cafe">
                 <button class="button-8">+</button>
                 <img src="./assets/img/cabrales-brasil.png" alt="" class="img-card-8">
                 <h2 class="titulos-productos">Cabrales <span style="color: #C4B507 ;">Brasil</span></h2>
                 <h3>$5500</h3>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="./pages/main.js"></script>
     </main>
     <footer>
