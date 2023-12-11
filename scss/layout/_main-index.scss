@@ -1,86 +1,181 @@
-.grid-main-index {
+.main-index {
+    background-color: #EAD7BB;
     display: grid;
-    grid-template-columns: repeat(2, 49%);
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    width: 100%;
 
-    .pokemons {
-        @include grids-main-index;
+    .cards-zona1 {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
 
-        .fotos-grid-index img {
-            width: 90%
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+
+            button {
+                font-size: 30px;
+                margin: 20px;
+                padding: 15px 10px;
+                color: #7B3F00;
+                background-color: wheat;
+                border-color: white;
+                border-style: solid;
+
+                &:hover {
+                    cursor: pointer;
+                    border-color: #BCA37F;
+                }
+
+            }
         }
-    }
 
-    .art-toys {
-        @include grids-main-index;
-        grid-column: 2/ 3;
-        grid-row: 1 / 2;
 
-        .fotos-grid-index img {
-            width: 90%
+        .card-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            border-width: 1px;
+            border-style: none;
+            background-color: wheat;
+            border-radius: 5px;
+
+            &:hover {
+                border-style: solid;
+                border-color: white;
+            }
+
+            .button-1 {
+                align-self: end;
+                font-size: 40px;
+                text-shadow: 0px 0px 3px black;
+                color: white;
+                background-color: #F5CD82;
+                width: 28%;
+                height: 50px;
+                cursor: pointer;
+                border-style: none;
+                border-radius: 5px;
+            }
+
+            .img-card-1 {
+                width: 96%;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 5px;
+            }
+
+            h3 {
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
         }
-    }
 
-    .superheroes {
-        @include grids-main-index;
-        grid-column: 1/ 2;
-        grid-row: 2 / 3;
+        .card-2 {
+            @extend .card-1;
 
-        .fotos-grid-index img {
-            width: 60%;
+            .button-2 {
+                @extend .button-1;
+                width: 27%;
+            }
+
         }
-    }
 
-    .figuras-clasicas {
-        @include grids-main-index;
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        .card-3 {
+            @extend .card-1;
 
-        .fotos-grid-index img {
-            width: 30%;
+            .button-3 {
+                @extend .button-1;
+                width: 20%;
+            }
+
+            .img-card-3 {
+                width: 80%;
+            }
+
         }
-    }
-}
 
-.los-mas-vendidos {
-    width: 98.5%;
-    height: 100%;
-    margin-top: 10px;
-    margin-left: 14px;
-    border-style: solid;
-    border-color: white;
+        .card-4 {
+            @extend .card-1;
 
-    h2 {
-        color: white;
-        margin-top: 20px;
-        margin-left: 20px;
-        font-size: 40px;
-    }
+            .button-4 {
+                @extend .button-1;
+                width: 23%;
+            }
 
-    img:nth-child(2) {
-        width: 19%;
+            .img-card-4 {
+                width: 93.5%;
+                margin: 0px -26px;
+            }
+
+        }
+
     }
 
-    img:nth-child(3) {
-        width: 11%;
-        margin-bottom: 20px;
-    }
+    .cards-zona2 {
+        @extend .cards-zona1;
+        margin-left: 280px;
 
-    img:nth-child(4) {
-        width: 16%;
-        margin-bottom: 10px;
-    }
+        .card-5 {
+            @extend .card-1;
 
-    img:nth-child(5) {
-        width: 27%;
-        margin-bottom: 10px;
-    }
+            .button-5 {
+                @extend .button-1;
+                width: 23%;
+            }
 
-    img:nth-child(6) {
-        width: 23%;
-        margin-bottom: 30px;
+            .img-card-5 {
+                width: 80%;
+            }
+        }
+
+        .card-6 {
+            @extend .card-1;
+
+            .button-6 {
+                @extend .button-1;
+                width: 26%;
+            }
+
+            .img-card-6 {
+                width: 96%;
+            }
+
+        }
+
+        .card-7 {
+            @extend .card-1;
+
+            .button-7 {
+                @extend .button-1;
+            }
+
+            .img-card-7 {
+                width: 93%;
+            }
+
+        }
+
+        .card-8 {
+            @extend .card-1;
+
+            .button-8 {
+                @extend .button-1;
+                width: 29%;
+
+
+            }
+
+            .img-card-8 {
+                width: 97%;
+                margin: 0px -26px 0px;
+            }
+
+        }
     }
 }

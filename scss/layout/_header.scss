@@ -1,110 +1,68 @@
-header {
-    .header-up {
-        display: flex;
-        align-content: center;
+.header-index {
+    display: flex;
+    justify-content: center;
+    background-color: #BCA37F;
 
-        .logo-decori {
-            width: 100px;
-            margin-top: 10px;
-            margin-left: 10px;
+    .cafeina {
+        width: 300px;
+        margin-top: 0px;
+    }
+
+    .barra-de-busqueda {
+        margin-top: 22px;
+        margin-left: 10px;
+        padding: 10px;
+        width: 72%;
+        height: 45px;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+        font-family: 'verdana';
+        font-size: 15px;
+        outline: none;
+
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+            display: none;
         }
 
-        .decori {
-            width: 300px;
-            margin-top: -11px;
-            margin-left: -25px;
+        &::placeholder {
+            color: black;
+            opacity: 35%;
         }
 
-        .barra-de-busqueda {
-            margin-top: 33px;
-            padding: 10px;
-            width: 72%;
-            height: 40px;
-            font-family: 'verdana';
-            font-size: 15px;
-            outline: none;
+    }
 
-            &::-webkit-search-decoration,
-            &::-webkit-search-cancel-button,
-            &::-webkit-search-results-button,
-            &::-webkit-search-results-decoration {
-                display: none;
-            }
+    .boton-de-busqueda {
+        position: absolute;
+        background: none;
+        border: none;
+        width: 46px;
+        height: 40px;
+        margin-top: 25px;
+        margin-right: 155px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
 
-            &::placeholder {
-                color: black;
-                opacity: 35%;
-            }
 
-        }
-
-        .boton-de-busqueda {
+        &::before {
+            content: "";
+            display: block;
+            height: 26px;
+            border-left: 1px solid #e6e6e6;
             position: absolute;
-            background: none;
-            border: none;
-            width: 46px;
-            height: 40px;
-            margin-top: 33px;
-            margin-right: 148px;
-            right: 0;
-            top: 0;
-            cursor: pointer;
-
-
-            &::before {
-                content: "";
-                display: block;
-                height: 26px;
-                border-left: 1px solid #e6e6e6;
-                position: absolute;
-                top: 6.5px;
-            }
-        }
-
-        .carrito-de-compras {
-            margin-top: 30px;
-            margin-left: 45px;
-            width: 50px;
-            height: 50px;
+            top: 6.5px;
         }
     }
 
-    p {
-        display: flex;
-        justify-content: center;
-        margin-top: -30px;
-        color: #494949;
-        font-size: 27px;
-        font-style: italic;
-        text-shadow: 2px 2px 4px #000000;
+    .carrito-de-compras {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 45px;
+        height: 45px;
     }
 
-    nav {
-        ul {
-            display: flex;
-            justify-content: space-around;
-            list-style: none;
-            font-size: 40px;
-            margin-top: 40px;
-            margin: none;
-            padding: none;
-            width: 100%
-        }
-
-        li {
-            a {
-                color: white;
-                text-decoration: none;
-                text-shadow: 6px 6px 8px #000000;
-
-                &:hover {
-                    text-shadow: none;
-                }
-            }
-        }
-    }
-
-    .separador-horizontal {
-        @include separador-horizontal;
-    }
 }

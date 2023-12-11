@@ -1,131 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="impresion 3d, impresion 3d a pedido, impresion 3d caba, decoración, objetos decorativos para el hogar">
-    <meta name="description"
-        content="Decori provee una larga selección de productos decorativos hechos a impresion 3d con increibles descuentos semanales.">
-    <meta name="author" content="Tomas Misrahi">
-    <meta name="copyright" content="Imprefast">
-    <meta name="language" content="Spanish">
-    <meta property="og:title" content=Inicio - Productos a impresión 3D>
-    <meta property="og:site_name" content=Decori>
-    <meta property="og:url" content=https://6515f7386163830db8499c08--luminous-truffle-7c3368.netlify.app />
-    <meta property="og:description" content=Decori provee productos hechos a impresion 3d>
-    <meta property="og:type" content=product>
-    <meta property="og:image" content=https://luminous-truffle-7c3368.netlify.app/assets/img/logo-decori.png>
-    <title>Decori</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Cafeina</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto:ital,wght@1,100&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./assets/img/icono-pestaña.png">
+    <link rel="icon" href="./assets/img/logo-cafeina.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-up">
-            <a href="#">
-                <img src="./assets/img/logo-decori.png" alt="Logo Decori" class="logo-decori">
-            </a>
-            <a href="#">
-                <img src="./assets/img/decori.png" alt="Decori" class="decori">
-            </a>
-            <input type="search" placeholder="Buscar productos, marcas y ofertas" required class="barra-de-busqueda">
-            <button type="submit" class="boton-de-busqueda">
-                <img src="./assets/img/lupa-de-busqueda.png" alt="lupa de busqueda">
-            </button>
-            <img src="./assets/img/carrito-de-compras.png" alt="Carrito de compras" class="carrito-de-compras">
-        </div>
-        <p>
-            El único límite lo pones vos
-        </p>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                <li><a href="./pages/quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="./pages/crea-tu-cuenta.html">Creá tu cuenta</a></li>
-                <li><a href="./pages/ingresa.html">Ingresá</a></li>
-            </ul>
-        </nav>
-        <hr class="separador-horizontal">
+    <header class="header-index">
+        <a href="#">
+            <img src="./assets/img/cafeina.png" alt="Cafeina" class="cafeina">
+        </a>
+        <input type="search" placeholder="Buscá tu cafe favorito" required class="barra-de-busqueda">
+        <button type="submit" class="boton-de-busqueda">
+            <img src="./assets/img/lupa-de-busqueda.png" alt="lupa de busqueda">
+        </button>
+        <img src="./assets/img/carrito-de-compras.png" alt="Carrito de compras" class="carrito-de-compras">
     </header>
-    <main>
-        <section class="grid-main-index">
-            <div class="pokemons">
-                <div>
-                    <h2>Pokemons</h2>
-                    <h3>Pokemons musculosos</h3>
-                </div>
-                <div class="fotos-grid-index">
-                    <img src="./assets/img/pokemons.png" alt="Pokemones mamadisimos">
-                </div>
+    <main class="main-index">
+        <div class="cards-zona1">
+            <div class="botones">
+                <button class="boton-1" category="all">Todo</button>
+                <button class="boton-2" category="nescafe">Nescafe</button>
+                <button class="boton-3" category="martinez">Martinez</button>
+                <button class="boton-4" category="starbucks">Starbucks</button>
+                <button class="boton-5" category="cabrales">Cabrales</button>
             </div>
-            <div class="art-toys">
-                <div>
-                    <h2>Art Toys</h2>
-                    <h3>Art Toys personalizables</h3>
-                </div>
-                <div class="fotos-grid-index">
-                    <img src="./assets/img/art-toys.png" alt="Art toys">
-                </div>
+            
+            <div class="card-1">
+                <button class="button-1">+</button>
+                <img src="./assets/img/nescafe-gold-suave.png" alt="" class="img-card-1">
+                <h2 class="titulos-productos">Nescafe <span style="color: #D4AF37;">Gold</span> Suave</h2>
+                <h3>$4800</h3>
+
             </div>
-            <div class="superheroes">
-                <div>
-                    <h2>Superheroes</h2>
-                    <h3>Bustos de superheroes</h3>
-                </div>
-                <div class="fotos-grid-index">
-                    <img src="./assets/img/superheroes.png" alt="Bustos de superheroes">
-                </div>
+            <div class="card-2">
+                <button class="button-2">+</button>
+                <img src="./assets/img/nescafe-gold-intenso.png" alt="" class="img-card-2">
+                <h2 class="titulos-productos">Nescafe <span style="color: #D4AF37;">Gold</span> Intenso</h2>
+                <h3>$5300</h3>
             </div>
-            <div class="figuras-clasicas">
-                <div>
-                    <h2>Figuras clásicas</h2>
-                    <h3>Figuras clásicas de las peliculas y series</h3>
-                </div>
-                <div class="fotos-grid-index">
-                    <img src="./assets/img/figuras-clasicas-1.png" alt="Figura de Yoda">
-                    <img src="./assets/img/figuras-clasicas-2.png" alt="Figura de Jason">
-                    <img src="./assets/img/figuras-clasicas-3.png" alt="Figura de Wall-e y Eva">
-                </div>
+            <div class="card-3">
+                <button class="button-3">+</button>
+                <img src="./assets/img/martinez-selecto.png" alt="" class="img-card-3">
+                <h2 class="titulos-productos">Martinez <span style="color: #b59410 ;">Selecto</span> Equilibrado</h2>
+                <h3>$6000</h3>
             </div>
-        </section>
-        <section class="los-mas-vendidos">
-            <h2>Los más vendidos</h2>
-            <img src="./assets/img/los-mas-vendidos-1.png" alt="Figura de Pikachu musculoso">
-            <img src="./assets/img/los-mas-vendidos-2.png" alt="Figura de un Art toy inspirado en la pelicula E.T.">
-            <img src="./assets/img/los-mas-vendidos-3.png" alt="Figura de un busto de spiderman">
-            <img src="./assets/img/Los-mas-vendidos-4.png" alt="Figura de Godzilla">
-            <img src="./assets/img/los-mas-vendidos-5.png" alt="Figura de Bowser">
-        </section>
+            <div class="card-4">
+                <button class="button-4">+</button>
+                <img src="./assets/img/martinez-colombia.png" alt="" class="img-card-4">
+                <h2 class="titulos-productos">Martinez <span style="color: orange ;">Colombia</span> Suave</h2>
+                <h3>$8600</h3>
+            </div>
+
+        </div>
+        <div class="cards-zona2">
+            <div class="card-5">
+                <button class="button-5">+</button>
+                <img src="./assets/img/starbucks-espresso-roast.png" alt="" class="img-card-5">
+                <h2 class="titulos-productos">Starbucks <span style="color: darkviolet ;">Espresso</span> Roast</h2>
+                <h3>$10000</h3>
+            </div>
+            <div class="card-6">
+                <button class="button-6">+</button>
+                <img src="./assets/img/starbucks-house-blend.png" alt="" class="img-card-6">
+                <h2 class="titulos-productos">Starbucks <span style="color: chocolate ;">House</span> Blend</h2>
+                <h3>$10000</h3>
+            </div>
+            <div class="card-7">
+                <button class="button-7">+</button>
+                <img src="./assets/img/cabrales-colombia.png" alt="" class="img-card-7">
+                <h2 class="titulos-productos">Cabrales <span style="color: #FF7E24 ;">Colombia</span></h2>
+                <h3>$5500</h3>
+            </div>
+            <div class="card-8">
+                <button class="button-8">+</button>
+                <img src="./assets/img/cabrales-brasil.png" alt="" class="img-card-8">
+                <h2 class="titulos-productos">Cabrales <span style="color: #C4B507 ;">Brasil</span></h2>
+                <h3>$5500</h3>
+            </div>
+        </div>
+        <script src="./pages/main.js"></script>
     </main>
     <footer>
-        <hr>
-        <div>
-            <div class="zonas-footer">
-                <p class="titulos-footer">Ayuda</p>
-                <div class="zona-ayuda">
-                    <p>Preguntas frecuentes</p>
-                    <img src="../assets/img/logo-correo.png" alt="correo electrónico">
-                    <p>ayuda@decori.com.ar</p>
-                </div>
-            </div>
-            <hr>
-            <div class="zonas-footer">
-                <p class="titulos-footer">Redes sociales</p>
-                <div>
-                    <img src="../assets/img/facebook.png" alt="Facebook">
-                    <img src="../assets/img/instagram.png" alt="Instagram">
-                    <img src="../assets/img/tik-tok.png" alt="Tik tok">
-                    <img src="../assets/img/twitter.png" alt="Twitter">
-                </div>
-            </div>
+        <div class="textos1-footer">
+            <p>Sobre Nosotros</p>
+            <p>Contactanos</p>
+        </div>
+        <div class="textos2-footer">
+            <p>Cookies</p>
+            <p>Política de Privacidad</p>
+            <p>Términos de uso</p>
+            <p>Puntos de reciclaje</p>
+            <p>Cafeina.com.ar</p>
         </div>
     </footer>
 </body>
