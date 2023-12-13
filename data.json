@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Colombia Suave",
+        "precio": "$8600",
+        "id": "🟠"
+    },
+    {
+        "nombre": "Espresso Roast",
+        "precio": "$10000",
+        "id": "🟣"
+    },
+    {
+        "nombre": "Brasil",
+        "precio": "$5500",
+        "id": "🟡"
+    }
+]

@@ -153,3 +153,22 @@ agregar7.addEventListener("click", sinstock);
 agregar8.addEventListener("click", constock);
 
 
+// Fetch y JSON
+
+
+const lista = document.getElementsByClassName("los-mas-vendidos")[0];
+
+fetch("./data.json")
+    .then((response) => response.json())
+    .then((data) => {
+        data.forEach((producto) => {
+            const li = document.createElement("li");
+            li.innerHTML = `
+         <h2>${producto.id}</h2>
+         <h2>${producto.nombre}</h2>
+         <p>${producto.precio}</p>
+         
+       `;
+            lista.append(li);
+        });
+    });
