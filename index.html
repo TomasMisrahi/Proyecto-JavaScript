@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/logo-cafeina-chico.png" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="div-header">
+            <picture>
+                <source srcset="./assets/img/logo-cafeina-grande.png" media="(min-width: 600px)" >
+                <source srcset="./assets/img/logo-cafeina-mediano.png" media="(min-width: 400px)" >
+                <img src="./assets/img/logo-cafeina-chico.png" alt="logo de cafeina" />
+            </picture>
+            <div class="zona-de-busqueda">
+                <input id="search" type="search" placeholder="Buscá tu cafe favorito" />
+                <button type="submit">
+                    <img src="./assets/img/lupa-de-busqueda.png" alt="lupa de busqueda" />
+                </button>
+            </div>
+            <img src="./assets/img/carrito-de-compras.png" alt="Carrito de compras" class="carrito-de-compras" />
+        </div>
+    </header>
+
+    <main>
+        <div class="div-main">
+            <div class="hola">
+                <p class="texto-filtros">Filtros</p>
+                <div>
+                    <div class="menu-filtros" id="filtro-marca">
+                        <p class="tipos-de-filtros">Marca</p>
+                        <img src="./assets/img/flecha-hacia-abajo.png" alt="" class="flecha-marca">
+                    </div>
+                    <div class="botones-filtrado" id="botones-filtrado-marca">
+                        <button id="boton-1" class="bf" category="all">Todo</button>
+                        <button id="boton-2" class="bf" category="nescafe">Nescafe</button>
+                        <button id="boton-3" class="bf" category="martinez">Martinez</button>
+                        <button id="boton-4" class="bf" category="starbucks">Starbucks</button>
+                        <button id="boton-5" class="bf" category="cabrales">Cabrales</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu-filtros" id="filtro-intensidad">
+                        <p class="tipos-de-filtros">Intensidad</p>
+                        <img src="./assets/img/flecha-hacia-abajo.png" alt="" class="flecha-intensidad">
+                    </div>
+                    <div class="botones-filtrado" id="botones-filtrado-intensidad">
+                        <button id="boton-6" class="bf" category="all">Suave</button>
+                        <button id="boton-7" class="bf" category="nescafe">Medio</button>
+                        <button id="boton-8" class="bf" category="martinez">Intenso</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu-filtros" id="filtro-peso">
+                        <p class="tipos-de-filtros">Peso</p>
+                        <img src="./assets/img/flecha-hacia-abajo.png" alt="" class="flecha-peso">
+                    </div>
+                    <div class="botones-filtrado" id="botones-filtrado-peso">
+                        <button id="boton-9" class="bf" category="all">250g</button>
+                        <button id="boton-10" class="bf" category="nescafe">500g</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-cards">
+                <div class="card-1 cafe">
+                    <img src="./assets/img/nescafe-gold-suave.png" alt="" />
+                    <h2>
+                        Nescafe <span style="color: #d4af37">Gold</span> Suave
+                    </h2>
+                    <h3>$14150</h3>
+                    <button class="button-1">Agregar al carrito</button>
+                </div>
+                <div class="card-2 cafe">
+                    <img src="./assets/img/nescafe-gold-intenso.png" alt="" />
+                    <h2>
+                        Nescafe <span style="color: #d4af37">Gold</span> Intenso
+                    </h2>
+                    <h3>$14150</h3>
+                    <button class="button-2">Agregar al carrito</button>
+                </div>
+                <div class="card-3 cafe">
+                    <img src="./assets/img/martinez-selecto.png" alt="" />
+                    <h2>
+                        Martinez <span style=" color: #b59410">Selecto</span> Equilibrado
+                    </h2>
+                    <h3>$15800</h3>
+                    <button class="button-3">Agregar al carrito</button>
+                </div>
+                <div class="card-4 cafe">
+                    <img src="./assets/img/martinez-colombia.png" alt="" />
+                    <h2>
+                        Martinez <span style=" color: orange">Colombia</span> Suave
+                    </h2>
+                    <h3>$22200</h3>
+                    <button class="button-4">Agregar al carrito</button>
+                </div>
+                <div class="card-5 cafe">
+                    <img src="./assets/img/martinez-brasil.png" alt="" />
+                    <h2>
+                        Martinez <span style="color: #c4b507">Brasil</span>
+                    </h2>
+                    <h3>$12800</h3>
+                    <button class="button-8">Agregar al carrito</button>
+                </div>
+                <div class="card-6 cafe">
+                    <img src="./assets/img/starbucks-espresso-roast.png" alt="" />
+                    <h2>
+                        Starbucks <span style=" color: darkviolet">Espresso</span> Roast
+                    </h2>
+                    <h3>$19500</h3>
+                    <button class="button-5">Agregar al carrito</button>
+                </div>
+                <div class="card-7 cafe">
+                    <img src="./assets/img/starbucks-house-blend.png" alt="" />
+                    <h2>
+                        Starbucks <span style="color: chocolate">House</span> Blend
+                    </h2>
+                    <h3>$19500</h3>
+                    <button class="button-6">Agregar al carrito</button>
+                </div>
+                <div class="card-8 cafe">
+                    <img src="./assets/img/cabrales-colombia.png" alt="" />
+                    <h2>
+                        Cabrales <span style="color: #ff7e24">Colombia</span>
+                    </h2>
+                    <h3>$12900</h3>
+                    <button class="button-7">Agregar al carrito</button>
+                </div>
+                <div class="card-9 cafe">
+                    <img src="./assets/img/cabrales-brasil.png" alt="" />
+                    <h2>
+                        Cabrales <span style="color: #c4b507">Brasil</span>
+                    </h2>
+                    <h3>$12900</h3>
+                    <button class="button-8">Agregar al carrito</button>
+                </div>
+                <div class="card-10 cafe">
+                    <img src="./assets/img/cabrales-peru.png" alt="" />
+                    <h2>
+                        Cabrales <span style="color: #c4b507">Peru</span>
+                    </h2>
+                    <h3>$12900</h3>
+                    <button class="button-8">Agregar al carrito</button>
+                </div>
+                <div class="card-11 cafe">
+                    <img src="./assets/img/cabrales-prestige.png" alt="" />
+                    <h2>
+                        Cabrales <span style="color: #c4b507">Prestige</span>
+                    </h2>
+                    <h3>$8900</h3>
+                    <button class="button-8">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="los-mas-vendidos">
+            <p>Los más vendidos</p>
+            <ul class="los-mas-vendidos-ul"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <div class="textos-footer">
+                <p>Sobre Nosotros</p>
+                <p>Contactanos</p>
+                <p>Puntos de reciclaje</p>
+            </div>
+            <div class="textos-footer">
+                <p>Términos y condiciones</p>
+                <p>Política de Privacidad</p>
+            </div>
+            <div class="iconos-footer">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/img/icono-instagram.png" alt="">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./assets/img/icono-youtube.png" alt="">
+                </a>
+                <a href="https://x.com/" target="_blank">
+                    <img src="./assets/img/icono-twitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./main.js"></script>
+
+</html>
